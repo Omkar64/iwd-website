@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GR Diagnostic and Health Care Center</h1>
+    </header>
+
+    <section>
+        <h2>Book an Appointment</h2>
+
+        <form id="appointmentForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" required>
+
+            <label>Gender:</label>
+            <label for="male"><input type="radio" id="male" name="gender" value="Male" required> Male</label>
+            <label for="female"><input type="radio" id="female" name="gender" value="Female" required> Female</label>
+            <label for="other"><input type="radio" id="other" name="gender" value="Other" required> Other</label>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Date:</label>
+            <input type="text" id="date" name="date" pattern="[dd-mm-yy]" placeholder="dd-mm-yy" required >
+
+            <button type="button" onclick="bookAppointment()">Book an Appointment</button>
+        </form>
+
+        <div id="appointmentResponse"></div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

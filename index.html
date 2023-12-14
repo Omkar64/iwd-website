@@ -1,0 +1,68 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GR Diagnostic and Health Care Center</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="blood-tests.html">Blood Tests</a></li>
+            <li><a href="appointment.html">Appointment Booking</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="blood-tests">
+        <h2>Blood Tests</h2>
+        <p>Explore our comprehensive range of blood tests to assess your health.</p>
+        <!-- Add more content as needed -->
+    </section>
+
+    <section id="appointment">
+        <h2>Appointment Booking</h2>
+        <p>Schedule an appointment with us for a consultation or specific tests.</p>
+        <form id="appointmentForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="appointmentDate">Preferred Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+            <button type="button" onclick="submitAppointment()">Book Appointment</button>
+        </form>
+        <div id="appointmentResponse"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us with any questions or concerns.</p>
+        <div class="contact-info">
+            <p>Email: info@diagnosticcenter.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+        </div>
+        <form id="contactForm">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitContact()">Submit</button>
+        </form>
+        <div id="contactResponse"></div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
